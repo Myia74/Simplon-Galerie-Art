@@ -297,6 +297,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 66262613}
+  - component: {fileID: 66262615}
   - component: {fileID: 66262614}
   m_Layer: 0
   m_Name: FpsPlayer
@@ -313,7 +314,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 66262612}
   m_LocalRotation: {x: 0.09122304, y: 0.6506199, z: -0.033539664, w: 0.7531581}
-  m_LocalPosition: {x: 11.8, y: 0, z: 38.72}
+  m_LocalPosition: {x: 11.8, y: 0, z: 5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -334,6 +335,26 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 18dda843cf4a8144686e518f48154407, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  controller: {fileID: 66262615}
+  speedPlayer: 14
+--- !u!143 &66262615
+CharacterController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 66262612}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Height: 2
+  m_Radius: 0.5
+  m_SlopeLimit: 45
+  m_StepOffset: 0.3
+  m_SkinWidth: 0.08
+  m_MinMoveDistance: 0.001
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &330585543
 GameObject:
   m_ObjectHideFlags: 0
@@ -469,6 +490,7 @@ MonoBehaviour:
   mouseY: 0
   mouseSpeed: 100
   fpsPlayerBody: {fileID: 66262613}
+  xRotation: 0
 --- !u!1 &631254473
 GameObject:
   m_ObjectHideFlags: 0
