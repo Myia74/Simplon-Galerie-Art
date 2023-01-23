@@ -6,7 +6,7 @@ public class MouseLook : MonoBehaviour
 {
     [SerializeField] private float mouseX;
     [SerializeField] private float mouseY;
-    [SerializeField] private float mouseSpeed = 100.0f;
+    [SerializeField] private float mouseSpeed = 300.0f;
     [SerializeField] private Transform fpsPlayerBody;
     [SerializeField] private float xRotation = 0.0f;
 

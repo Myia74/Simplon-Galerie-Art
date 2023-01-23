@@ -9,6 +9,9 @@ public class FpsPlayerController : MonoBehaviour
 
     [SerializeField] private CharacterController controller;
     [SerializeField] private float speedPlayer = 14.0f;
+    [SerializeField] private float gravity = -9.81f;
+
+    Vector3 velocity;
 
    
 
@@ -21,6 +24,10 @@ public class FpsPlayerController : MonoBehaviour
         Vector3 move = transform.right * positionX + transform.forward * positionZ;
 
         controller.Move(move * speedPlayer * Time.deltaTime);
+
+        velocity.y += gravity * Time.deltaTime;
+
+        controller.Move(velocity * Time.deltaTime);
 
     }
 }
