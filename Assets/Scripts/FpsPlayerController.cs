@@ -29,5 +29,7 @@ public class FpsPlayerController : MonoBehaviour
 
         controller.Move(velocity * Time.deltaTime);
 
+        
+
     }
 }
