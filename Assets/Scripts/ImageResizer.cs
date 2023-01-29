@@ -16,7 +16,7 @@ public class ImageResizer : MonoBehaviour
     {
 
         // chargement image par chemin suivant 
-        string imagePath = "Assets/Images"; 
+        /*string imagePath = "Assets/Images"; 
         Texture2D texture = LoadImage(imagePath);
 
         // Redimensionner image pour adaptation taille du cadre
@@ -25,13 +25,15 @@ public class ImageResizer : MonoBehaviour
 
         // Appliquer la texture redimensionnee au sprite renderer
         spriteRenderer.sprite = Sprite.Create(texture, new Rect(0, 0, texture.width, texture.height), Vector2.zero);
-
+      */
     }
 
+    /*
     private Texture2D LoadImage(string imagePath)
     {
         throw new NotImplementedException();
     }
+    */
 
     // Update is called once per frame
     void Update()
@@ -39,6 +41,7 @@ public class ImageResizer : MonoBehaviour
         
     }
 
+    /*
     private Texture2D ResizeImage(Texture2D texture, Vector2 targetSize)
     {
         // Calculer les proportions pour redimensionner correctement l'image
@@ -61,5 +64,6 @@ public class ImageResizer : MonoBehaviour
 
         return resizedTexture;
     }
+    */
 
 }

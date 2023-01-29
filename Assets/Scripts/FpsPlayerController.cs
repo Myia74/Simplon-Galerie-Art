@@ -8,10 +8,17 @@ public class FpsPlayerController : MonoBehaviour
     private float positionZ;
 
     [SerializeField] private CharacterController controller;
+    [SerializeField] private Light spotLight;
+
     [SerializeField] private float speedPlayer = 14.0f;
     [SerializeField] private float gravity = -9.81f;
 
     Vector3 velocity;
+
+    private void Start()
+    {
+        spotLight = GetComponentInChildren<Light>();
+    }
 
 
     // Update is called once per frame
@@ -28,5 +35,28 @@ public class FpsPlayerController : MonoBehaviour
 
         controller.Move(velocity * Time.deltaTime);
 
+    
+
     }
+
+    private void OnTriggerEnter(Collider other)
+    {
+         
+
+        if (spotLight != null && other.CompareTag("SpotLight"))
+        {
+            spotLight.enabled = true;
+            Debug.Log("SpotLight est en mode true ");
+        }
+        
+    }
+    /*
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("SpotLight"))
+        {
+            spotLight.enabled = true;
+            Debug.Log("SpotLight est en mode true ");
+        } 
+    }*/
 }
