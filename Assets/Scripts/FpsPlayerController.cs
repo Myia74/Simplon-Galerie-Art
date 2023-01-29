@@ -13,7 +13,6 @@ public class FpsPlayerController : MonoBehaviour
 
     Vector3 velocity;
 
-   
 
     // Update is called once per frame
     void Update()
@@ -28,8 +27,6 @@ public class FpsPlayerController : MonoBehaviour
         velocity.y += gravity * Time.deltaTime;
 
         controller.Move(velocity * Time.deltaTime);
-
-        
 
     }
 }

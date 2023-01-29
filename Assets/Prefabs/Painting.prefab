@@ -94,6 +94,8 @@ GameObject:
   m_Component:
   - component: {fileID: 2725141742243971892}
   - component: {fileID: 218110448}
+  - component: {fileID: -6333755429009421146}
+  - component: {fileID: 6612918879831462523}
   m_Layer: 0
   m_Name: Painting
   m_TagString: Untagged
@@ -171,6 +173,38 @@ SpriteRenderer:
   m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &-6333755429009421146
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3631241668836358067}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7779c5b78ceb1e444b53921f5e513fe3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  artistName: []
+  artWorkName: []
+  description: []
+  targetImage: {fileID: 0}
+  descriptionText: {fileID: 0}
+--- !u!114 &6612918879831462523
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3631241668836358067}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 12cfe5371362049498905d537e9a5206, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spriteRenderer: {fileID: 0}
+  targetImage: {fileID: 0}
+  imageName: 
 --- !u!1 &4224562448908006016
 GameObject:
   m_ObjectHideFlags: 0
